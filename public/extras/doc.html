@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>TOS</title>
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="{{ csrf_token() }}" />
+        <style>
+            html {
+                font-family: arial, sans-serif;
+            }
+            .header {
+                height: 100px;
+                width: 100%;
+                border-bottom: 2px black solid;
+                padding-bottom: 5px;
+            }
+            .header-left {
+                float: left;
+                height: 100%;
+                width: 65%;
+            }
+            .header-left > table {
+                height: 100%;
+            }
+            .header-right {
+                float: right;
+                height: 100%;
+                width: fit-content;
+                text-align: right;
+            }
+            .ssu-logo {
+                height: 100px;
+                float: left;
+            }
+            .ssu-address {
+                border-left: black 2px solid;
+                float: left;
+                margin-left: 15px;
+                padding-left: 10px;
+            }
+            .ssu-address > p {
+                margin: 0px;
+            }
+
+            .aja-logo {
+                height: 100px;
+            }
+            .aja-address {
+                margin-top: 5px;
+            }
+            .aja-address > p {
+                margin: 0px;
+                font-size: 11px;
+                text-align: center;
+                color: rgb(7, 83, 159);
+                font-weight: 600;
+            }
+
+            .table {
+                table-layout: fixed;
+                border-collapse: collapse;
+                width: 100%;
+                font-weight: 600;
+                font-size: 13px;
+            }
+
+            .table-colored > tbody > tr {
+                background: rgb(220, 215, 222);
+            }
+
+            .table-main {
+                table-layout: fixed;
+                width: 100%;
+            }
+
+            .table-sub1 {
+                border-collapse: collapse;
+            }
+            .table-sub1 > tr > th {
+                width: 16.66%;
+            }
+            td,
+            th {
+                border: 1px solid black;
+                text-align: center;
+                /* padding: 0px; */
+            }
+
+            tr:nth-child(even) {
+                background-color: #ffffff;
+            }
+
+            .body-header > p,
+            h4 {
+                text-align: center;
+                margin: 4px;
+                font-weight: 600;
+            }
+            .body-header {
+                margin-top: 30px;
+            }
+            .body-header > p {
+                font-size: 14px;
+            }
+            .footer {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                bottom: 0;
+            }
+
+            .footer-table {
+                width: 100%;
+                border: none !important;
+            }
+
+            .designation > td > p {
+                margin: 0px;
+            }
+            .sign-name {
+                font-size: 13px;
+                text-decoration: underline;
+                font-weight: 600;
+            }
+            .sign-by {
+                font-size: 13px;
+                font-weight: 600;
+            }
+            .sign {
+                font-size: 12px;
+                font-style: italic;
+            }
+
+            .footer-2 {
+                font-size: 10px;
+                margin-top: 30px;
+                margin-left: 10px;
+                float: right;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="header-left">
+                <table style="border:none">
+                    <tr style="border:none">
+                        <td style="border:none">
+                            <img
+                                class="ssu-logo"
+                                src="../images/ssu_logo.png"
+                            />
+                        </td>
+                        <td style="border:none">
+                            <div class="ssu-address">
+                                <p>SAMAR STATE UNIVERSITY</p>
+                                <p>
+                                    Arteche Blvd., Catbalogan City, Philippines
+                                    6700
+                                </p>
+                                <p style="font-weight: 600;">
+                                    Office of the Vice President | Academic
+                                    Affairs
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="header-right">
+                <img class="aja-logo" src="../images/aja_logo.png" />
+                <div class="aja-address">
+                    <p>SSU-OVPAA-FR-014</p>
+                    <p>04-Feb-2019 Rev. 3</p>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="body-header">
+                <h4>TABLE OF SPECIFICATIONS</h4>
+                <p>Midterm Examination</p>
+                <p>Second Semester / SY 2019- 2020</p>
+                <p style="text-decoration: underline;">Math 8A – Calculus 2</p>
+                <p>Subject</p>
+            </div>
+            <table class="table table-colored">
+                <tr>
+                    <th style="width:20%;border-bottom: none;">
+                        Topics
+                    </th>
+                    <th style="width:8%;border-bottom: none;">
+                        No. of Hours
+                    </th>
+                    <th style="width:8%;border-bottom: none;">
+                        Percent (%)
+                    </th>
+                    <th style="width:66%; padding:0px;border-bottom: none;">
+                        Cognitive Skills Tested
+                        <table class="table table-sub1 table-colored">
+                            <tr>
+                                <th style="border-left:none">
+                                    Remember
+                                </th>
+                                <th style="width: 17%;">
+                                    Understand
+                                </th>
+                                <th>
+                                    Apply
+                                </th>
+                                <th>
+                                    Analyze
+                                </th>
+                                <th>
+                                    Evaluate
+                                </th>
+                                <th style="border-right:none;">
+                                    Create
+                                </th>
+                            </tr>
+                            <tr>
+                                <th
+                                    style="border-left:none; border-bottom: none;"
+                                >
+                                    Item No.
+                                </th>
+                                <th style="border-bottom: none;">
+                                    Item No.
+                                </th>
+                                <th style="border-bottom: none;">
+                                    Item No.
+                                </th>
+                                <th style="border-bottom: none;">
+                                    Item No.
+                                </th>
+                                <th style="border-bottom: none;">
+                                    Item No.
+                                </th>
+                                <th
+                                    style="border-right:none; border-bottom: none;"
+                                >
+                                    Item No.
+                                </th>
+                            </tr>
+                        </table>
+                    </th>
+                    <th style="width:8%;border-bottom: none;">
+                        Total
+                    </th>
+                </tr>
+            </table>
+
+            <table class="table table-main">
+                <tr>
+                    <td style="width:20%">
+                        <p></p>
+                    </td>
+                    <td style="width:8%"></td>
+                    <td style="width:8%"></td>
+                    <td style="width:11%"></td>
+                    <td style="width:11%"></td>
+                    <td style="width:11%"></td>
+                    <td style="width:11%"></td>
+                    <td style="width:11%"></td>
+                    <td style="width:11%"></td>
+                    <td style="width:8.0%"></td>
+                </tr>
+            </table>
+
+            <table class="table table-main table-colored">
+                <tr>
+                    <td style="width:20%; border-top: none;">Total</td>
+                    <td style="width:8.0%; border-top: none;"></td>
+                    <td style="width:8%; border-top: none;"></td>
+                    <td style="width:11%; border-top: none;"></td>
+                    <td style="width:11%; border-top: none;"></td>
+                    <td style="width:11%; border-top: none;"></td>
+                    <td style="width:11%; border-top: none;"></td>
+                    <td style="width:11%; border-top: none;"></td>
+                    <td style="width:11%; border-top: none;"></td>
+                    <td style="width:8%; border-top: none;"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            <div class="footer-1">
+                <table class="footer-table">
+                    <tr style="border:none">
+                        <td style="border:none">
+                            <p class="sign-by">Prepared by:</p>
+                        </td>
+                        <td style="border:none">
+                            <p class="sign-by">Reviewed by:</p>
+                        </td>
+                        <td style="border:none">
+                            <p class="sign-by">Checked & Verified by:</p>
+                        </td>
+                        <td style="border:none">
+                            <p class="sign-by">APPROVED by:</p>
+                        </td>
+                    </tr>
+                    <tr style="border:none">
+                        <td style="border:none">
+                            <p class="sign-by"></p>
+                        </td>
+                        <td style="border:none">
+                            <p class="sign-by"></p>
+                        </td>
+                        <td style="border:none">
+                            <p class="sign-by"></p>
+                        </td>
+                        <td style="border:none">
+                            <p class="sign-by"></p>
+                        </td>
+                    </tr>
+                    <tr class="designation" style="border:none">
+                        <td style="border:none">
+                            <p class="sign-name">ABEGAIL G. BORDIOS</p>
+                            <p class="sign">Faculty</p>
+                        </td>
+                        <td style="border:none">
+                            <p class="sign-name">JONAH GAY V. PEDRAZA, Ph.D.</p>
+                            <p class="sign">Area/Program Chair Person</p>
+                        </td>
+                        <td style="border:none">
+                            <p class="sign-name">THERESA B. PROBADORA</p>
+                            <p class="sign">
+                                Focal Person for Quality Assurance
+                            </p>
+                        </td>
+                        <td style="border:none">
+                            <p class="sign-name">GINA UY-ESPAÑO, Ph.D.</p>
+                            <p class="sign">Dean, College of Education</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footer-2">
+                Telephone No. +6355 251 2139 | Fax: +6355 543 8394 | Website:
+                www.ssu.edu.ph | Contact us: info@ssu.edu.ph | Follow us on @
+                ssucatbalogan | Page 1 of 1
+            </div>
+        </div>
+    </body>
+</html>
